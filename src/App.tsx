@@ -5,12 +5,12 @@
  * @format
  */
 
-import {SafeAreaView, Text} from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
 
-const App = () => {
+const App = ({ x }: any) => {
   return (
     <SafeAreaView>
-      <Text>Olá Mundo!</Text>
+      <Text>{x}Olá Mundo!</Text>
     </SafeAreaView>
   );
 };

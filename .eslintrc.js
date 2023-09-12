@@ -25,14 +25,18 @@ module.exports = {
     node: true,
   },
   extends: [
-    '@react-native',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
+  plugins: ['simple-import-sort', 'prettier'],
   rules: {
+    'prettier/prettier': ['error', { endOfLine: 'auto' }, { usePrettierrc: true }],
     'react/react-in-jsx-scope': 'off',
-    'prettier/prettier': ['error', {endOfLine: 'auto'}],
+    'react/prop-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 };
