@@ -7,10 +7,10 @@
 
 import { SafeAreaView, Text } from 'react-native';
 
-const App = ({ x }: any) => {
+const App = () => {
   return (
     <SafeAreaView>
-      <Text>{x}Olá Mundo!</Text>
+      <Text>Olá Mundo!</Text>
     </SafeAreaView>
   );
 };

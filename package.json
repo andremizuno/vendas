@@ -42,7 +42,7 @@
   "engines": {
     "node": ">=16"
   },
-  "jest":{
+  "jest": {
     "preset": "react-native"
   },
   "pre-commit": "lint"
