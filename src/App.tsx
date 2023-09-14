@@ -5,19 +5,14 @@
  * @format
  */
 
-import { SafeAreaView, Text } from 'react-native';
-import styled from 'styled-components/native';
+import { SafeAreaView } from 'react-native';
 
-const TextNew = styled.Text`
-  color: #ff0015;
-  font-size: 34px;
-`;
+import Login from './modules/login';
 
 const App = () => {
   return (
     <SafeAreaView>
-      <Text>Olá !!!!</Text>
-      <TextNew>novo</TextNew>
+      <Login />
     </SafeAreaView>
   );
 };
